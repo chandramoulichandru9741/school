@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.jpg';
-import '../styles/NavbarComponent.css'; 
+import '../styles/NavbarComponent.css';
 
 const NavbarComponent = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -20,7 +20,7 @@ const NavbarComponent = () => {
   }, []);
 
   return (
-    <nav className={`navbar navbar-expand-lg navbar-light ${scrolled ? 'navbar-scrolled' : 'navbar-transparent'}`}>
+    <nav className={`navbar navbar-expand-lg ${scrolled ? 'navbar-scrolled' : 'navbar-transparent'}`}>
       <NavLink className="navbar-brand" to="/">
         <img src={logo} height={40} width={40} alt="Springdale Public School" />
         Springdale Public School
