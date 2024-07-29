@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/ContactUs.css'; // Import the CSS file
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -56,7 +57,7 @@ const ContactUs = () => {
       <h1 className="text-center mb-4">Contact Us</h1>
       
       <div className="row mb-4">
-        <div className="col-md-6">
+        <div className="col-md-6 contact-info">
           <h2>Contact Information</h2>
           <p><strong>Address:</strong> Springdale Public School, 123 Education Lane, Cityville, State, ZIP Code</p>
           <p><strong>Phone:</strong> +1 (123) 456-7890</p>
@@ -77,7 +78,7 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <div>
+      <div className="contact-form">
         <h2>Send Us a Message</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
