@@ -9,24 +9,33 @@ const Academics = () => {
       <section className="mb-5 shadow-box">
         <h2>Curriculum</h2>
         <div className="row">
-          <div className="col-md-6">
-            <h3>Primary (Grades 1-5)</h3>
-            <p>English, Mathematics, Science, Social Studies, Art, Physical Education</p>
-          </div>
-          <div className="col-md-6">
-            <h3>Secondary (Grades 6-10)</h3>
-            <p>English, Mathematics, Science (Physics, Chemistry, Biology), Social Studies, Computer Science, Physical Education, Art</p>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-6">
-            <h3>Senior Secondary (Grades 11-12)</h3>
-            <h4>Science Stream</h4>
-            <p>Physics, Chemistry, Biology, Mathematics, Computer Science, English</p>
-          </div>
-          <div className="col-md-6">
-            <h4>Commerce Stream</h4>
-            <p>Accountancy, Business Studies, Economics, Mathematics, English</p>
+          <div className="col-md-12">
+            <table className="table curriculum-table">
+              <thead>
+                <tr>
+                  <th>Grade</th>
+                  <th>Subjects</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Primary (Grades 1-5)</td>
+                  <td>English, Mathematics, Science, Social Studies, Art, Physical Education</td>
+                </tr>
+                <tr>
+                  <td>Secondary (Grades 6-10)</td>
+                  <td>English, Mathematics, Science (Physics, Chemistry, Biology), Social Studies, Computer Science, Physical Education, Art</td>
+                </tr>
+                <tr>
+                  <td>Senior Secondary (Grades 11-12)</td>
+                  <td>
+                    <strong>Science Stream:</strong> Physics, Chemistry, Biology, Mathematics, Computer Science, English
+                    <br />
+                    <strong>Commerce Stream:</strong> Accountancy, Business Studies, Economics, Mathematics, English
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>

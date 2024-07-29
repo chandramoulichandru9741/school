@@ -1,3 +1,5 @@
+/* Academics.css */
+
 .shadow-box {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -5,9 +7,34 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+  }
   
-.shadow-box:hover {
+  .shadow-box:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+  }
+  
+  .curriculum-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .curriculum-table th,
+  .curriculum-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .curriculum-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .curriculum-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .curriculum-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
